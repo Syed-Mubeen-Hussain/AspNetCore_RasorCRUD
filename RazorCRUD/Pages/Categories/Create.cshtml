@@ -1,0 +1,14 @@
+﻿@page
+@model RazorCRUD.Pages.Categories.CreateModel
+
+<form method="post">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input asp-for="Category.Name" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Display Order</label>
+        <input type="number" asp-for="Category.DisplayOrder" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
